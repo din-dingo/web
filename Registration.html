@@ -3,8 +3,9 @@
     <head>
         <title>Registration</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="themes.css">
     </head>
-    <body>
+    <body class="light">
         <h1>Registration form</h1>
         <form>
             <div class="input_form">
@@ -25,12 +26,13 @@
             </div>
             <div class="input_form">
                 <label for="check">I have read and agree to the terms of service</label>
-                <input type="checkbox" id="check"/>
+                <input type="checkbox" id="check" onchange="document.getElementById('submission').disabled = !this.checked"/>
             </div>
-            <div class="submission">
-                <input type="submit" value="Submit form"/>
+            <div class="submission_form">
+                <input type="submit" id="submission" value="Submit form" disabled/>
             </div>
-            
+            <button class="theme_button" onclick="toggleTheme()">Theme</button>
         </form>
+        <script src="./toggleTheme.js"></script>
     </body>
 </html>
