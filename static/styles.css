@@ -1,0 +1,41 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: Georgia;
+}
+
+.input_form {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+.submission_form {
+    display: flex;
+    justify-content: center;
+    padding: 75px;
+}
+
+.theme_button {
+    position: absolute;
+    left: 90%;
+    bottom: 93%;
+    width: 50px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #e3e3e3;
+}
+
+input[type=submit] {
+    width: 200px;
+    height: 30px;
+    background-color: #a4a4a4;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #cccccc;
+}
