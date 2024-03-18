@@ -7,22 +7,22 @@
     </head>
     <body class="light">
         <h1>Registration form</h1>
-        <form>
+        <form action="/reg" method="post">
             <div class="input_form">
                 <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Ivan Ivanov"/>
+                <input type="text" id="name" placeholder="Ivan Ivanov" name="name"/>
             </div>
             <div class="input_form">
                 <label for="phone">Phone</label>
-                <input type="tel" id="phone" placeholder="+7(xxx)xxx-xx-xx"/>
+                <input type="tel" id="phone" placeholder="+7(xxx)xxx-xx-xx" name="phone"/>
             </div>
             <div class="input_form">
                 <label for="email">Email address</label>
-                <input type="email" id="email"/>
+                <input type="email" id="email" name="email"/>
             </div>
             <div class="input_form">
                 <label for="password">Password</label>
-                <input type="password" id="password"/>
+                <input type="password" id="password" name="password"/>
             </div>
             <div class="input_form">
                 <label for="check">I have read and agree to the terms of service</label>
@@ -33,6 +33,6 @@
             </div>
             <button class="theme_button" onclick="toggleTheme()">Theme</button>
         </form>
-        <script src="./toggleTheme.js"></script>
+        <script src="toggleTheme.js"></script>
     </body>
 </html>
