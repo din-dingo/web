@@ -5,25 +5,29 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
-import Root from "./routes/root";
-import Route1 from "./routes/route1";
-import Route2 from "./routes/route2";
+import {Header} from "./components/header/Header";
+import {Asteroids} from "./routes/Asteroids";
+import {Destroyment} from "./routes/Destroyment";
+import {Asteroid} from "./routes/Asteroid";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <Header/>,
   },
   {
-    path: "route1",
-    element: <Route1 />,
+    path: "asteroids",
+    element: <Asteroids/>,
   },
   {
-    path: "route2",
-    element: <Route2 />,
+    path: "destroyment",
+    element: <Destroyment/>,
+  },
+  {
+    path: "asteroid/:id",
+    element: <Asteroid/>,
   },
 ]);
-
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
