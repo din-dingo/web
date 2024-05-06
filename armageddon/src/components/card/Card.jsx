@@ -13,7 +13,7 @@ export const Card = (props)=>{
             <div className={styles.data}>
                 <div>Дата: {date}</div>
                 <div>Размер: {size} м</div>
-                <div>Расстояние: {mode ? distance/384467 : distance} {mode ? " дистанций до луны" : " км"}</div>
+                <div>Расстояние: {mode ? distance.lunar : Math.round(distance.kilometers)} {mode ? " дистанций до луны" : " км"}</div>
             </div>
         </div>
 
