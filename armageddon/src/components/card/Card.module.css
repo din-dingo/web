@@ -1,0 +1,61 @@
+.container {
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    width: 920px;
+    height: 200px;
+    top: 444px;
+    left: 206px;
+    border-radius: 10px;
+    margin: 10px
+}
+
+.green {
+    background: linear-gradient(90deg, #CFF37D 0%, #7DE88C 100%);
+}
+
+.red {
+    background: linear-gradient(90deg, #FFB199 0%, #FF0844 100%);
+}
+
+.image {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.data {
+    display: grid;
+    justify-content: space-between;
+}
+
+.hazard {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.button {
+    padding: 10px 16px 10px 16px;
+    border-radius: 24px;
+    border: 0px;
+    background-color: #186DD6;
+    color: white;
+}
+
+.button:hover{
+    background-color: #0152b4;
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: #3d92fa;
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 10px;
+}
