@@ -1,7 +1,19 @@
 import styles from "./Card.module.css";
 import asteroid from "./asteroid.svg";
 
-export const Card = (props)=>{
+type CardProps = {
+    name: string,
+    date: string,
+    distance: {
+        kilometers: number,
+        lunar: number
+    },
+    size: number,
+    isDangerous: boolean,
+    mode: boolean
+}
+
+export const Card = (props: CardProps)=>{
     const {name, date, distance, size, isDangerous, mode} = props;
 
     return <div className={`${isDangerous ? styles.red : styles.green} ${styles.container}`}>

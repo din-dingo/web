@@ -4,7 +4,17 @@ import {useEffect, useState} from "react"
 import styles from "./style.module.css";
 
 export const Asteroids = ()=>{
-    const [asteroids, setAsteroids] = useState([])
+    const [asteroids, setAsteroids] = useState<{
+        name: string,
+        date: string,
+        distance: {
+            kilometers: number,
+            lunar: number
+        },
+        size: number,
+        isDangerous: boolean,
+        id: string
+    }[]>([])
 
     const [onlyDangerous, setOnlyDangerous] = useState(false)
 
@@ -37,7 +47,7 @@ export const Asteroids = ()=>{
         <Header/>
         <div className={styles.menu} onChange={()=>setOnlyDangerous(!onlyDangerous)}>
             <div>
-                <input type="checkbox" value={onlyDangerous}></input>Показать только опасные
+                <input type="checkbox" value={onlyDangerous as unknown as string}></input>Показать только опасные
             </div>
             <div>
                 Расстояние
